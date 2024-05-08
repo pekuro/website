@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="description of page...">
-        <title>Anne Pekurovski | Fine Art</title>
+        <meta name="description" content="Anne Pekurovski art, paintings, and CV">
+        <title>Anne Pekurovski | Paintings</title>
         <style>
             img {
                 width: 100px;
@@ -24,39 +24,74 @@
                 font-weight: bold;
                 font-size: 36px;
                 font-family:'Courier New', Courier, monospace;
-                text-align: center;
+                line-height: 2;
             }
             div.container {
                 width: 80%;
                 margin: 0 auto;
             }
-        </style>
-        <h1 class="headingstyle">Anne Pekurovski</h1>
-        
-    </head>
+            nav.navstyle {
+                background-color: #eeecec;
+                box-shadow: 0 2px 4 px rgba(0,0,0,0.1);
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000%;
+                height: 60px;
+            }
+            ul.ulstyle {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                height: 60px;
+            }
+            li.listyle {
+                padding: 0 15px;
+                align-self: center;
+            }
+            li.listyle a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            li.listyle a:hover {
+                color: #747881;
+            }
 
+            @media (max-width: 768px) {
+                ul.ulstyle {
+                    justify-content: space-around;
+                }
+                li.listyle {
+                    padding: 0 10px;
+                }
+            }
+        </style>
+    </head>
     <body>
         <header>
-            <div class="container" aria-label="Site Navigation">
-                <nav>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ARTWORK</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <h1 class="headingstyle">Anne Pekurovski</h1>
         </header>
-        <!--p style="background-color:rgb(236, 236, 236);">Very cool website</p -->
-        <img src="images/yujkgkuyhg.jpg" alt="monkey">
-        <p class="hi">hello</p>
-        <p class="welc">welcome to my <em>website</em></p>
-        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae delectus laboriosam sit commodi et ab accusantium odit fugit voluptatibus, iure officiis maxime fuga cumque voluptatem harum id quidem unde.</p>
-        
-        <a href="art/piece.html">
-            <img src="images/yujkgkuyhg.jpg" alt="art piece name"/>
-        </a>
-        <a href="mailto:apekurovski@gmail.com">Email</a>
+        <nav class="navstyle">
+            <ul class="ulstyle">
+                <li class="listyle"><a href="#">Home</a></li>
+                <li class="listyle"><a href="#">Selected Works</a></li>
+                <li class="listyle"><a href="#">CV</a></li>
+                <li class="listyle"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container" aria-label="Main content" style="padding-top: 80px;">
+            <img src="images/yujkgkuyhg.jpg" alt="monkey">
+            <p class="hi">hello</p>
+            <p class="welc">welcome to my <em>website</em></p>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae delectus laboriosam sit commodi et ab accusantium odit fugit voluptatibus, iure officiis maxime fuga cumque voluptatem harum id quidem unde.</p>
+            <a href="art/piece.html">
+                <img src="images/yujkgkuyhg.jpg" alt="art piece name"/>
+            </a>
+            <a href="mailto:apekurovski@gmail.com">Email</a>
+        </div>        
     </body>
-	
 </html>
